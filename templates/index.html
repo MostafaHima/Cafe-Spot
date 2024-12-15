@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Coffee and Wifi{% endblock %}
+
+{% block content %}
+<!-- Jumbotron section for the main call-to-action -->
+<div class="jumbotron text-center">
+    <div class="container">
+
+      <!-- Main heading with coffee and wifi theme -->
+      <h1 class="display-4">☕️ Coffee & Wifi 💻</h1>
+
+      <!-- Lead paragraph describing the purpose of the page -->
+      <p class="lead">Want to work in a cafe but need power and Wi-Fi?</p>
+
+      <!-- Horizontal line for visual separation -->
+      <hr class="my-4">
+
+      <!-- Additional information about the collection -->
+      <p>You've found the right place! Checkout my collection of cafes with data on power socket availability, wifi speed and coffee quality.</p>
+
+      <!-- Button linking to the cafes page -->
+      <a class="btn btn-warning btn-lg" href="{{ url_for('cafes') }}" role="button">Show Me!</a>
+
+    </div>
+</div>
+
+{% endblock %}
